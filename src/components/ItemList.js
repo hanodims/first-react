@@ -1,8 +1,8 @@
 import React from "react";
 // Styling
-import styles from "./components/styles";
+import styles from "./styles";
 //data
-import items from "./components/item.js";
+import items from "./item.js";
 
 const itemList = items.map((item) => (
     <div style={styles.item} key={item.id}>
