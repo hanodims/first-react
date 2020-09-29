@@ -1,24 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import styles from "./styles";
+//import ItemList from "./components/ItemList";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <header className="App-header"></header>
+      <div style={styles.body}>
+     <h1 style={styles.text} >CheeseCake Store</h1>
+     <img style={styles.shopImage} src="https://www.homestratosphere.com/wp-content/uploads/2019/01/1-24-1-1.jpg" alt="cheeseCake"></img>
+      </div>
     </div>
   );
 }
