@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from "./styles";
-//import ItemList from "./components/ItemList";
+import styles from "./components/styles";
+import ItemList from "./components/ItemList";
 
 function App() {
 
@@ -10,9 +10,10 @@ function App() {
       <div style={styles.body}>
      <h1 style={styles.text} >CheeseCake Store</h1>
      <img style={styles.shopImage} src="https://www.homestratosphere.com/wp-content/uploads/2019/01/1-24-1-1.jpg" alt="cheeseCake"></img>
-      </div>
-    </div>
-  );
-}
+     </div>
+     <ItemList />
+     </div>
+     )}
+      
 
 export default App;

@@ -1,7 +1,23 @@
 import React from "react";
+// Styling
+import styles from "./components/styles";
+//data
+import items from "./components/item.js";
 
+const itemList = items.map((item) => (
+    <div style={styles.item} key={item.id}>
+      <img
+      style={styles.itemImage}
+      alt={item.name}
+      src={item.image}
+      width="20%"
+      />
+    <p style={styles.text}>{item.name}</p>
+    <p style={styles.text}>{item.price} SR</p>
+    </div>
+  ));
 const ItemList = () => {
-  return <h1>I'm the ItemList component!</h1>;
+  return <div style={styles.list}>{itemList}</div>
 };
 
 export default ItemList;
