@@ -1,7 +1,10 @@
 import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
-  body: { backgroundColor: "#FBFEFC" }, 
+  body {
+    color: ${props => props.theme.mainColor};
+    background-color: ${props => props.theme.backgroundColor};
+  }
 `;
 
 const ListWrapper = styled.div`
@@ -18,25 +21,27 @@ const ItemWrapper = styled.div`
   }
   p {
     text-align: center;
-    &.cookie-price {
-      color: #ff85a2
+    &.item-price {
+      color: ${props => props.theme.blue};
     }
   }
 `;
 
-const styles = {
+const Title = styled.h1`
+  text-align: center;
+`;
 
-    shopImage: {
-      display: "block",
-      marginLeft: "auto",
-      marginRight: "auto",
-      width: "50%",
-    },
-  };
+const ShopImage = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+`;
   
-  export default {
-    styles,
+  export {
+    ShopImage,
     GlobalStyle,
     ListWrapper,
-    ItemWrapper
+    ItemWrapper,
+    Title
   };

@@ -1,6 +1,6 @@
 import React from "react";
 // Styling
-import {styles,ListWrapper} from "../styles.js";
+import {ListWrapper} from "../styles.js";
 //data
 import items from "./item.js";
 
