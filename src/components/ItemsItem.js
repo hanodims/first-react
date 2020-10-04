@@ -1,20 +1,19 @@
 import React from "react";
 // Styling
-import styles from "./styles";
+import {styles} from "../styles.js";
 
 const ItemsItem = (props) => {
   const item = props.item;
     return (
-    <div style={styles.item} key={item.id}>
+    <styles key={item.id}>
       <img
-      style={styles.itemImage}
       alt={item.name}
       src={item.image}
       width="20%"
       />
-    <p style={styles.text}>{item.name}</p>
-    <p style={styles.text}>{item.price} SR</p>
-    </div>
+    <p>{item.name}</p>
+    <p>{item.price} SR</p>
+    </styles>
   ); };
 
   export default ItemsItem;

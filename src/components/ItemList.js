@@ -1,6 +1,6 @@
 import React from "react";
 // Styling
-import styles from "./styles";
+import {styles,ListWrapper} from "../styles.js";
 //data
 import items from "./item.js";
 
@@ -10,7 +10,7 @@ const itemList = items.map(item => (
 <ItemsItem item = {item} key = {item.id} /> ));
 
 const ItemList = () => {
-  return <div style={styles.list}>{itemList}</div>
+  return <ListWrapper>{itemList}</ListWrapper>
 };
 
 export default ItemList;
